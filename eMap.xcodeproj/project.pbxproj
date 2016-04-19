@@ -12,6 +12,7 @@
 		0EB6A2221CBB91B900C968ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EB6A2201CBB91B900C968ED /* Main.storyboard */; };
 		0EB6A2241CBB91B900C968ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EB6A2231CBB91B900C968ED /* Assets.xcassets */; };
 		0EB6A2271CBB91B900C968ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EB6A2251CBB91B900C968ED /* LaunchScreen.storyboard */; };
+		A9B66134C5863024FFD80757 /* Pods_eMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C6E163B1928B644D570369 /* Pods_eMap.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		0EB6A2231CBB91B900C968ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EB6A2261CBB91B900C968ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0EB6A2281CBB91B900C968ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E71EBEFD683991DDDAAF36A /* Pods-eMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eMap/Pods-eMap.debug.xcconfig"; sourceTree = "<group>"; };
+		34C6E163B1928B644D570369 /* Pods_eMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2BEE787C3CC1999270129A0 /* Pods-eMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-eMap/Pods-eMap.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9B66134C5863024FFD80757 /* Pods_eMap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				0EB6A21B1CBB91B900C968ED /* eMap */,
 				0EB6A21A1CBB91B900C968ED /* Products */,
+				D9A56C07140AA7FBBA2B088B /* Pods */,
+				C66F1E66E5A36ABF9AA3EBCF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = eMap;
 			sourceTree = "<group>";
 		};
+		C66F1E66E5A36ABF9AA3EBCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34C6E163B1928B644D570369 /* Pods_eMap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9A56C07140AA7FBBA2B088B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E71EBEFD683991DDDAAF36A /* Pods-eMap.debug.xcconfig */,
+				B2BEE787C3CC1999270129A0 /* Pods-eMap.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0EB6A22B1CBB91B900C968ED /* Build configuration list for PBXNativeTarget "eMap" */;
 			buildPhases = (
+				F08EEA60958ECD899683E010 /* Check Pods Manifest.lock */,
 				0EB6A2151CBB91B900C968ED /* Sources */,
 				0EB6A2161CBB91B900C968ED /* Frameworks */,
 				0EB6A2171CBB91B900C968ED /* Resources */,
+				0D35699F8BC0FE44506C4A48 /* Embed Pods Frameworks */,
+				471F735CAF807846DD694D81 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +123,7 @@
 				TargetAttributes = {
 					0EB6A2181CBB91B900C968ED = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = SP2677Y4P7;
 					};
 				};
 			};
@@ -129,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D35699F8BC0FE44506C4A48 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eMap/Pods-eMap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		471F735CAF807846DD694D81 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eMap/Pods-eMap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F08EEA60958ECD899683E010 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0EB6A2151CBB91B900C968ED /* Sources */ = {
@@ -249,23 +325,33 @@
 		};
 		0EB6A22C1CBB91B900C968ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E71EBEFD683991DDDAAF36A /* Pods-eMap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = eMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.essa.testing.eMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		0EB6A22D1CBB91B900C968ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2BEE787C3CC1999270129A0 /* Pods-eMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = eMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.essa.testing.eMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -288,6 +374,7 @@
 				0EB6A22D1CBB91B900C968ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
